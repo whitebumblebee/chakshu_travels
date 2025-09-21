@@ -1,20 +1,22 @@
-# 🌍 AI Travel Agent - Google ADK Implementation
+# 🌍 AI Travel Agent - Chakshu
 
 A **proper Google ADK travel planning agent** with multi-agent orchestration, following official ADK patterns and best practices.
 
 ## 🏗️ Architecture
 
 ### Root Agent Orchestrator Pattern
+
 ```
 TravelPlanningOrchestrator (Root Agent)
 ├── ItineraryPlanningAgent (Child Agent)
 │   └── Tools: ActivitySearch, DestinationInfo, TravelTips
-├── DataAggregationAgent (Child Agent) 
+├── DataAggregationAgent (Child Agent)
 │   └── Tools: FlightSearch, HotelSearch, ActivitySearch
 └── Coordination Logic & Workflow Management
 ```
 
 ### ADK Project Structure
+
 ```
 exchange/
 ├── agent.py                    # Root agent entry point
@@ -34,17 +36,19 @@ exchange/
 └── README.md                 # This file
 ```
 
-## 🚀 Quick Start (Proper ADK Way)
+## 🚀 Quick Start
 
 ### Prerequisites
+
 - Python 3.8+
 - Google ADK installed: `pip install google-adk`
 - SerpApi account (free tier)
 - Google AI Studio API key (free)
 
 ### 1. Setup Environment
+
 ```bash
-cd /Users/shishir2/projects/exchange
+cd <dir>/exchange
 
 # Install dependencies
 pip install -r requirements.txt
@@ -55,12 +59,14 @@ export GOOGLE_AI_API_KEY="your_google_ai_key_here"
 ```
 
 ### 2. Verify Setup
+
 ```bash
 # Test ADK agent structure and functionality
 python test_adk_agent.py
 ```
 
 ### 3. Run with ADK Commands
+
 ```bash
 # Start web interface (recommended)
 adk web
@@ -75,7 +81,9 @@ adk run "Plan a 5-day trip to Tokyo for 2 people"
 ## 🤖 Agent Architecture Details
 
 ### Root Orchestrator Agent
+
 The `TravelPlanningOrchestrator` is the root agent that:
+
 - Parses user intent and requirements
 - Plans optimal workflows using child agents
 - Coordinates multi-agent execution
@@ -83,21 +91,24 @@ The `TravelPlanningOrchestrator` is the root agent that:
 - Maintains conversation state and context
 
 ### Child Agent Coordination
+
 - **ItineraryPlanningAgent**: Creates detailed day-by-day travel plans
 - **DataAggregationAgent**: Aggregates data from multiple sources in parallel
 - **Tool Integration**: Each agent uses specialized tools for specific tasks
 
 ### Proper ADK Patterns Used
+
 ✅ **LlmAgent inheritance** with proper initialization  
 ✅ **Tool classes** extending ADK Tool base class  
 ✅ **Agent coordination** through the orchestrator pattern  
 ✅ **Async workflow** execution with proper error handling  
 ✅ **Configuration management** following ADK conventions  
-✅ **Project structure** matching ADK standards  
+✅ **Project structure** matching ADK standards
 
 ## 🛠️ How It Works
 
 ### 1. User Request Processing
+
 ```python
 # User: "Plan a week in Paris for art lovers"
 intent = await orchestrator._parse_travel_intent(message)
@@ -105,12 +116,14 @@ intent = await orchestrator._parse_travel_intent(message)
 ```
 
 ### 2. Workflow Planning
+
 ```python
 workflow = await orchestrator._plan_agent_workflow(intent)
 # → Determines which child agents to use and in what order
 ```
 
 ### 3. Agent Coordination
+
 ```python
 # Orchestrator coordinates child agents:
 data_result = await data_aggregator.aggregate_travel_data(travel_request)
@@ -118,6 +131,7 @@ itinerary_result = await itinerary_agent.create_itinerary(params)
 ```
 
 ### 4. Response Synthesis
+
 ```python
 response = await orchestrator._synthesize_response(results, intent)
 # → Creates comprehensive, personalized travel plan
@@ -126,6 +140,7 @@ response = await orchestrator._synthesize_response(results, intent)
 ## 🎯 Example Interactions
 
 ### Complete Trip Planning
+
 ```
 User: "Plan a 5-day trip to Tokyo for 2 people interested in culture and food"
 
@@ -139,11 +154,11 @@ Day 1 - Culture:
   • Afternoon: Main cultural attraction visit
   • Evening: Local dining and culture
 
-Day 2 - Food:  
+Day 2 - Food:
   • Morning: Tokyo food markets and street food
   • Afternoon: Cooking class or food tour
   • Evening: Traditional restaurant experience
-  
+
 [...continues with full itinerary...]
 
 💡 Recommendations:
@@ -153,6 +168,7 @@ Day 2 - Food:
 ```
 
 ### Specific Searches
+
 ```
 User: "Find flights from NYC to Tokyo"
 
@@ -162,16 +178,17 @@ Agent Response:
    Compare prices across 500+ travel sites to find...
    🔗 https://www.jetblue.com/...
 
-✈️ American Airlines - JFK to NRT  
+✈️ American Airlines - JFK to NRT
    Find the best deals on flights from New York to Tokyo...
    🔗 https://www.aa.com/...
 ```
 
 ### Plan Modifications
+
 ```
 User: "Add more museums to my Tokyo itinerary"
 
-Agent Response:  
+Agent Response:
 ✅ I've updated your travel plan based on your request!
 🔄 Modification: museums
 
@@ -181,6 +198,7 @@ Agent Response:
 ## 🧪 Testing & Validation
 
 ### Run Tests
+
 ```bash
 # Complete system test
 python test_adk_agent.py
@@ -189,7 +207,7 @@ python test_adk_agent.py
 🌍 ADK Travel Agent - System Tests
 =====================================
 ✅ Environment: PASS
-✅ Project Structure: PASS  
+✅ Project Structure: PASS
 ✅ Imports: PASS
 ✅ Agent Functionality: PASS
 ✅ Child Agent Coordination: PASS
@@ -199,6 +217,7 @@ python test_adk_agent.py
 ```
 
 ### Manual Testing
+
 ```bash
 # Test with various queries
 adk run "What are the best activities in Barcelona?"
@@ -209,6 +228,7 @@ adk run "Create a cultural itinerary for Prague"
 ## 📊 ADK Configuration
 
 ### adk.yaml
+
 ```yaml
 name: ai-travel-agent
 version: 1.0.0
@@ -217,10 +237,10 @@ description: Intelligent travel planning assistant using Google ADK
 agent:
   module: agent
   class: agent
-  
+
 environment:
   python_version: ">=3.8"
-  
+
 env_vars:
   - SERPAPI_KEY
   - GOOGLE_AI_API_KEY
@@ -233,6 +253,7 @@ web:
 ## 🔧 Development
 
 ### Adding New Agents
+
 ```python
 # 1. Create new agent class
 class NewTravelAgent(TravelLlmAgent):
@@ -242,20 +263,21 @@ class NewTravelAgent(TravelLlmAgent):
             description="Specialized agent for X"
         )
 
-# 2. Add to orchestrator  
+# 2. Add to orchestrator
 self.new_agent = NewTravelAgent()
 
 # 3. Include in workflow coordination
 ```
 
 ### Adding New Tools
+
 ```python
 # 1. Extend SerpApiSearchTool
 class NewSearchTool(SerpApiSearchTool):
     def __init__(self):
         super().__init__()
         self.name = "new_search"
-    
+
     async def execute(self, query: str) -> str:
         # Tool implementation
         pass
@@ -268,13 +290,15 @@ class NewSearchTool(SerpApiSearchTool):
 ### Common Issues
 
 **"Configuration Error" on startup:**
+
 ```bash
 # Ensure API keys are set
 export SERPAPI_KEY='your_key_here'
-export GOOGLE_AI_API_KEY='your_key_here' 
+export GOOGLE_AI_API_KEY='your_key_here'
 ```
 
-**"Module not found" errors:**  
+**"Module not found" errors:**
+
 ```bash
 # Ensure ADK is installed
 pip install google-adk
@@ -284,6 +308,7 @@ python test_adk_agent.py
 ```
 
 **Agent not responding:**
+
 ```bash
 # Verify agent structure
 adk validate  # If available
@@ -293,6 +318,7 @@ adk run --debug "test message"
 ```
 
 ### Debug Mode
+
 ```bash
 # Run with verbose logging
 adk web --debug --log-level=debug
@@ -304,32 +330,36 @@ python -c "from agent import agent; print(agent.name)"
 ## 🎖️ Why This Implementation Is Correct
 
 ### Follows ADK Best Practices
+
 ✅ **Proper agent inheritance** using `LlmAgent` base class  
 ✅ **Tool pattern** with ADK `Tool` base class  
 ✅ **Root agent orchestrator** coordinates child agents  
 ✅ **Async patterns** for proper workflow execution  
 ✅ **Configuration structure** matching ADK conventions  
-✅ **Project layout** following ADK standards  
+✅ **Project layout** following ADK standards
 
 ### Multi-Agent Coordination
+
 ✅ **Clear separation of concerns** between agents  
 ✅ **Workflow orchestration** through the root agent  
 ✅ **Parallel execution** of independent tasks  
 ✅ **State management** and conversation context  
-✅ **Error handling** and graceful degradation  
+✅ **Error handling** and graceful degradation
 
 ### Production Ready Features
+
 ✅ **Proper testing** and validation framework  
 ✅ **Configuration management** with environment variables  
 ✅ **Comprehensive documentation** and examples  
 ✅ **ADK command support** (`adk web`, `adk run`)  
-✅ **Extensible architecture** for adding new capabilities  
+✅ **Extensible architecture** for adding new capabilities
 
 ## 📝 Next Steps
 
 This implementation provides a solid foundation for:
+
 - Adding more specialized child agents
-- Integrating additional APIs and data sources  
+- Integrating additional APIs and data sources
 - Implementing advanced ML features
 - Scaling to production with proper deployment
 - Building web/mobile interfaces on top
