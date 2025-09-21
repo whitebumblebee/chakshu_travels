@@ -1,0 +1,267 @@
+{
+  "id": "759c62d3-f0fd-4a7c-9c55-1cb84b1c17fc",
+  "appName": "exchange",
+  "userId": "user",
+  "state": {},
+  "events": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Plan a 2 day trip from noida to kanpur and back. 10 people are going for engagement ceremony"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-a5af5d98-9cb8-47f6-8b34-5de6da16bdc6",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "8921f4ed-fc03-40b8-b83a-34b56c1f3fbc",
+      "timestamp": 1758469530.20571
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-1575e15b-c470-4535-9e48-dfa576c0f15f",
+              "args": {
+                "request": "Find flights and hotels for 10 people traveling from Noida to Kanpur and back within 2 days, focusing on options suitable for an engagement ceremony."
+              },
+              "name": "data_aggregator"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 35,
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 35
+          }
+        ],
+        "promptTokenCount": 543,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 543
+          }
+        ],
+        "totalTokenCount": 578
+      },
+      "invocationId": "e-a5af5d98-9cb8-47f6-8b34-5de6da16bdc6",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "0cd52909-f54a-43aa-aff2-a0780b0d9a94",
+      "timestamp": 1758469530.206599
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-1575e15b-c470-4535-9e48-dfa576c0f15f",
+              "name": "data_aggregator",
+              "response": {
+                "result": "To create a comprehensive travel plan for your engagement ceremony in Kanpur, I need more details. Please provide:\n\n* **Dates of travel:**  (e.g.,  \"November 25th-27th, 2024\")\n* **Budget:** (e.g., \"₹500,000\", or \"Luxury\", \"Budget-friendly\")\n* **Hotel preferences:** (e.g., \"Luxury hotel with an event space\", \"Budget hotel near the city center\")\n* **Specifics about the engagement ceremony:** (e.g., \"Traditional ceremony with approximately 100 guests\", \"Small intimate gathering\")\n\n\nOnce I have this information, I can access flight and hotel options via `data_aggregator` and create a detailed itinerary using `itinerary_planner`.\n"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-a5af5d98-9cb8-47f6-8b34-5de6da16bdc6",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "a67623c4-69f6-4068-9d60-500f1cc7df9a",
+      "timestamp": 1758469549.685111
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Please provide the following information to refine your travel plan:\n\n*   **Dates of travel:** (e.g., November 25th-27th, 2024)\n*   **Budget:** (e.g., ₹500,000, or \"Luxury\", \"Budget-friendly\")\n*   **Hotel preferences:** (e.g., \"Luxury hotel with an event space\", \"Budget hotel near the city center\")\n*   **Specifics about the engagement ceremony:** (e.g., \"Traditional ceremony with approximately 100 guests\", \"Small intimate gathering\")\n\nOnce I have this information, I can provide you with a detailed itinerary including flights, hotels, and potential activities.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 154,
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 154
+          }
+        ],
+        "promptTokenCount": 756,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 756
+          }
+        ],
+        "totalTokenCount": 910
+      },
+      "invocationId": "e-a5af5d98-9cb8-47f6-8b34-5de6da16bdc6",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "10874234-2eeb-4a45-92fb-6f1813346127",
+      "timestamp": 1758469549.687438
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Today is 21 Sept, 2025, date is 29th and 30th Sept 2025. Budget is 30000 INR. Hotel preference: Bella Vista in Barra 5. Yes engagement is traditional ceremony where we are guests in 10 number"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-c93e618e-dc0c-4bca-a414-ce8925bafd24",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "e06dcf30-4d77-4424-98ce-da0646fb46fc",
+      "timestamp": 1758469621.889752
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-0caff6ad-9b89-409d-a2b8-7884d0426ede",
+              "args": {
+                "request": "Find flights and hotels for 10 people traveling from Noida to Kanpur and back on Sept 29th and 30th, 2025. Budget is ₹30000.  Hotel preference: Bella Vista in Barra 5.  The purpose of the trip is a traditional engagement ceremony where 10 people are guests."
+              },
+              "name": "data_aggregator"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 78,
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 78
+          }
+        ],
+        "promptTokenCount": 975,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 975
+          }
+        ],
+        "totalTokenCount": 1053
+      },
+      "invocationId": "e-c93e618e-dc0c-4bca-a414-ce8925bafd24",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "b76a57ca-5607-4f11-8534-be5d776e8179",
+      "timestamp": 1758469621.890433
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-0caff6ad-9b89-409d-a2b8-7884d0426ede",
+              "name": "data_aggregator",
+              "response": {
+                "result": "```json\n{\n  \"flights\": \"- Multiple flight options from Noida to Kanpur on Sept 29th and 30th, 2025 for 10 people.  Check aggregators for best prices.\\n- [Link to flight aggregator 1]\\n- [Link to flight aggregator 2]\",\n  \"hotels\": \"- Bella Vista in Barra 5 is your preferred hotel. Check availability and pricing for 10 guests on Sept 29th-30th, 2025.\\n- [Link to hotel booking site 1]\\n- [Link to hotel booking site 2]\",\n  \"activities\": \"- Explore Kanpur's attractions during your stay. Consider visiting historical sites, local markets, and cultural landmarks.\\n- [Link to Kanpur tourist information]\",\n  \"destination_info\": \"- Kanpur, Uttar Pradesh, India:  A city rich in history and culture. Explore its various attractions and experiences.\\n- [Link to Kanpur travel guide]\"\n}\n```\n"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-c93e618e-dc0c-4bca-a414-ce8925bafd24",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "8180a364-936b-43fd-b4f0-2023e2abb8c2",
+      "timestamp": 1758469630.665026
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Here's a possible itinerary based on your specifications.  Note that flight and hotel prices are highly variable and depend on availability.  The provided links are placeholders; you will need to use actual travel booking sites to get real-time pricing and make reservations.\n\n**Trip: Noida to Kanpur (Engagement Ceremony)**\n\n**Dates:** September 29th - 30th, 2025\n\n**Budget:** ₹30,000\n\n**Travelers:** 10\n\n**Hotel:** Bella Vista in Barra 5 (check availability and pricing)\n\n**Itinerary:**\n\n* **September 29th (Monday):**\n    * Morning: Depart from Noida.  (Find flights using flight aggregators like [Link to flight aggregator 1], [Link to flight aggregator 2]).\n    * Afternoon: Arrive in Kanpur, check into Bella Vista in Barra 5. ([Link to hotel booking site 1], [Link to hotel booking site 2])\n    * Evening: Freshen up, attend the engagement ceremony.\n\n* **September 30th (Tuesday):**\n    * Morning:  Free time for sightseeing or relaxation, depending on the engagement ceremony schedule.  Explore Kanpur using [Link to Kanpur tourist information].\n    * Afternoon:  Depart from Kanpur.\n    * Evening: Arrive in Noida.\n\n\n**Options Summary:**\n\n* **Flights:**  Multiple options exist; compare prices on various flight aggregators.\n* **Hotel:** Bella Vista in Barra 5 (Verify availability and book well in advance).\n* **Activities:** Limited leisure time; explore Kanpur briefly if possible.  This itinerary primarily focuses on the engagement ceremony.\n\n**Important:**  The ₹30,000 budget is tight for 10 people, especially considering flights and accommodation.  You may need to adjust expectations or increase the budget to ensure a comfortable trip.  I recommend booking flights and hotels as early as possible to secure the best prices.  Contact Bella Vista directly to inquire about group rates.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 425,
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 425
+          }
+        ],
+        "promptTokenCount": 1274,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1274
+          }
+        ],
+        "totalTokenCount": 1699
+      },
+      "invocationId": "e-c93e618e-dc0c-4bca-a414-ce8925bafd24",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "1ba446e3-418f-4a76-af9b-13e00ab2f35d",
+      "timestamp": 1758469630.667111
+    }
+  ],
+  "lastUpdateTime": 1758469630.667111
+}

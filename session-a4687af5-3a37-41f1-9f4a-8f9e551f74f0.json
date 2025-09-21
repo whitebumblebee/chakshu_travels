@@ -1,0 +1,211 @@
+{
+  "id": "a4687af5-3a37-41f1-9f4a-8f9e551f74f0",
+  "appName": "exchange",
+  "userId": "user",
+  "state": {},
+  "events": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Plan a 2 day trip from noida to kanpur and back. 10 people are going for engagement ceremony"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-6cf2953e-1f79-43e4-97f4-a903ec2a0ad6",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "2c943980-8391-4121-acb2-62ff354e4c64",
+      "timestamp": 1758471819.863611
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "thoughtSignature": "CpEHAdHtim971EVEkrzdHMiUTVvCmAYv6xwCK3iz0_hsa2qwBSJwHSrF2pcbJjP5JV4ggHpUUHZ18OpwuigNPxtrWtc-nmmwCSAonNJ3V-BmhhkSKCXX8K2uy2BMSlXko_s6MCt-iHbNb1sCtZM7B2NIrF1W2qEZat5JGxviCylLNZ_pWS86FIqu6pRs5bzk5gtuFMxOiI8W62R9ZoSy1tqrT010n1zOEov-itIeLQp5airUsRhuIYOEEaWA_bkFMqdEAAG4Sa3IeziyltxZxn6QxGZ6CV574UYtlCq51j5XduxRAU_EE2DFSlrlKWyIRXWqjfs9NfD5sGNFzXQzFf0_U9vuiic1NCri28qKtrxRA6Tn-0lpWFCpwmNP9t_POr2HkS2pshNgzTfA53-KMlXThJ5uoNRJkzRdgudQV6z7oFeifjQPYT4d_suZ1cjshgX1QCLCqM7i19jfHk0VFnQGj3RYvk-toPEKlNhdejrF6vziLuU2H4PcaKYcBcg1usCj6YJf7kJsy4wwNZ8QrZ4EUKAaypYzgROfSQrMLFUF8ZwrBX3u80ImItepZWp6bONRAX7fbci-RoQfZrArJLLXMJGAb6UJ8_odGl98LSG-Cg7AAiSBic_TT-knTGyOgLRpuXVQe-k9jFOGKeZ8VODD8AB6iqH2y_WY7OwN8b-glI2nynI3cscBfNDh31NLj8uS1vm9iJu4SR2nKiuf0wSH6b3stfkyGJ7qt4HrZAcpHq05k1U6pJE2p_Z_gVzn67sqOZuuG7kSy9PKLTjI-edM5wps0qHFKz8vtI8rpXOFw75oZqUu2m76POAE12j2gpIR42lvzk23-M7S_0QmVoUAjrqbR0_gYyk4l-m7yyNij0x17OIk5dYFwsvLQsCUYgl_BKBq8udMXOzl_Yo35X2LzAziIa5uCppMEo-cBYQznRyqAS8enV4D_HWhFy9CGrUeyi4EgB7abiw6W-ypz6gL4iFhKEGP0DHiWK70XfUKfkosNJ3HgiHMCKwQuqrUESGkpMGNd1xsh8y0rnswAuobrY_AY7YAMKOc0XOHUI68iIPElGXbcVkW8ld-eMg0GnybXg-3HXDzIEflrx6YrvOhZnA2ScohoGM3x_dEu-ro7yUIKptT2LmiWw_6MseVer85jKFgmw9llXBWAL4t680GyOpZavyUkSqSGc3w7PuGBDMyvUQBz_99aWmUdf8a-JsBog==",
+            "functionCall": {
+              "id": "adk-9eaa8dff-33b9-4d6a-9d2b-9bbeebd3d8a1",
+              "args": {
+                "request": "2-day trip from Noida to Kanpur for 10 people for an engagement ceremony. Dates: 2025-09-21 to 2025-09-23."
+              },
+              "name": "data_aggregator"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 58,
+        "promptTokenCount": 649,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 649
+          }
+        ],
+        "thoughtsTokenCount": 189,
+        "totalTokenCount": 896
+      },
+      "invocationId": "e-6cf2953e-1f79-43e4-97f4-a903ec2a0ad6",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "319a43fa-66e2-4149-9252-35a5a81b9ff8",
+      "timestamp": 1758471819.864559
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-9eaa8dff-33b9-4d6a-9d2b-9bbeebd3d8a1",
+              "name": "data_aggregator",
+              "response": {
+                "result": "```json\n{\n  \"flights\": [\n    \"Cheap Flights from Delhi (DEL) to Kanpur (KNU) starting at $32 for one-way and $77 for round trip. 🔗 https://www.expedia.com/lp/flights/del/knu/delhi-to-kanpur\",\n    \"Flights from DEL to KNU are operated 5 times a week, with an average of 1 flight per day. 🔗 https://www.flightconnections.com/flights-from-del-to-knu\",\n    \"Book Delhi to Kanpur flights online on Air India. 🔗 https://www.airindia.com/en/book-flights/delhi-to-kanpur-flights\",\n    \"Find Cheap Flights from New Delhi to Kanpur (DEL - KNU) with 5 weekly nonstop flights. 🔗 https://www.google.com/travel/flights/flights-from-new-delhi-to-kanpur.html\"\n  ],\n  \"hotels\": [\n    \"THE 10 BEST Hotels in Kanpur, India including The Landmark Towers, Status Club & Resort, and Hotel Vijay Intercontinental. 🔗 https://www.tripadvisor.com/Hotels-g667805-Kanpur_Kanpur_Nagar_District_Uttar_Pradesh-Hotels.html\",\n    \"Book the best Hotels in Kanpur from 224 available options with free cancellation. 🔗 https://www.makemytrip.com/hotels/kanpur-hotels.html\",\n    \"Hotels in Kanpur from ₹1326: best places to stay in 2025 including Regenta Central The Crystal, The Landmark Hotel, Hotel Mandakini Royale. 🔗 https://in.hotels.com/de682904/hotels-in-kanpur-india/\",\n    \"Book Hotels in Kanpur at lowest Prices on Goibibo. Get Free Cancellation & Instant Refund on 213 Kanpur hotels. 🔗 https://www.goibibo.com/hotels/hotels-in-kanpur-ct/\",\n    \"10 Best Kānpur Hotels, India (From $17) - 133 hotels and places to stay. 🔗 https://www.booking.com/city/in/kanpur.html\"\n  ],\n  \"activities\": \"No specific activities were searched for, as the trip is for an engagement ceremony.\",\n  \"destination_info\": {\n    \"Kanpur\": \"The best time to visit Kanpur is from October to March when the winter sets in, making the weather pleasant for sightseeing and other activities. 🔗 https://www.holidify.com/places/kanpur/best-time-to-visit.html\"\n  }\n}\n```"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-6cf2953e-1f79-43e4-97f4-a903ec2a0ad6",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "ab6df6d9-c917-4c7d-a172-97de3f8b056c",
+      "timestamp": 1758471840.930455
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "thoughtSignature": "CvcCAdHtim-lzRcXKJN5eAvtI1USFiDR3noC29gD7e31LPKaB2bDiy5GrKdYiqTbqDwP7HrHcsCO0MvOzVE-LA6dtkNnDn8rYtM8cOciSyJ03H3FcdgW0LTevga-YgnnGioGaZBPDPbbngUwvZ2e9B-nM17c0M_sr_1sT2nilLjslAGwVrM-SmEiS8NsXWJle7JFX_a2zAsYmGi_FHHYYxyIQXsKunA0YwdecI2OJTotg8nMXPmbCPNnCDKKykTmDHVpeLfeVAXHPw-ZREZBq68XWPyhxS4QtjE04Gfsc2SuwN9LxHxL_DbkwIb3Xh3XppSlixcWsh-wIxOyaTOA2al0rmpvKnQFri__0vjb-9idIJJvwKADifGCoAgiFAfBExbapek37xYj6Vneyza6y2bap29FJVOn5Xg4BDpCwFqY3kaSqZ71EY6i0kOej9wa1fgIChxyHwHK4pOyWoBi6ENRcHDoE-vH7AXj2DXRc1p2JlFkV2yekaw4",
+            "functionCall": {
+              "id": "adk-39795d26-9afc-4ea8-95e9-ade147d8b263",
+              "args": {
+                "request": "Create a 2-day itinerary for 10 people traveling from Noida to Kanpur for an engagement ceremony. Include travel details (flights from Delhi to Kanpur, as Noida doesn't have an airport), accommodation options (from the provided list), and allocate time for the engagement ceremony and related events. Suggest travel dates as 2025-09-21 and 2025-09-22, departing on 2025-09-21 and returning on 2025-09-22."
+              },
+              "name": "itinerary_planner"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 700
+          }
+        ],
+        "cachedContentTokenCount": 700,
+        "candidatesTokenCount": 130,
+        "promptTokenCount": 1340,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1340
+          }
+        ],
+        "thoughtsTokenCount": 79,
+        "totalTokenCount": 1549
+      },
+      "invocationId": "e-6cf2953e-1f79-43e4-97f4-a903ec2a0ad6",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "b76bf6a6-7020-4922-a37d-988bd75c7f11",
+      "timestamp": 1758471840.931925
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-39795d26-9afc-4ea8-95e9-ade147d8b263",
+              "name": "itinerary_planner",
+              "response": {
+                "result": "Here's a 2-day itinerary for your engagement ceremony trip to Kanpur, including travel details, accommodation options, and a schedule for the ceremony:\n\n### Trip Summary\nThis 2-day trip is designed for 10 people traveling from Delhi to Kanpur for an engagement ceremony on **September 21-22, 2025**. It includes flight travel, 1-night hotel accommodation, and dedicated time for the ceremony and related events.\n\n### Flight Options (Delhi to Kanpur)\n*   **Dates:** Departing September 21, 2025, returning September 22, 2025.\n*   **Cost:** One-way flights start from $14 per person; round-trip flights start from $77 per person.\n*   **Airlines & Booking:** Major airlines operate on this route. You can find and book flights via:\n    *   Yatra: [https://www.yatra.com/flight-schedule/delhi-to-kanpur-flights.html](https://www.yatra.com/flight-schedule/delhi-to-kanpur-flights.html)\n    *   Air India: [https://www.airindia.com/en-us/book-flights/delhi-to-kanpur-flights](https://www.airindia.com/en-us/book-flights/delhi-to-kanpur-flights)\n    *   Expedia: [https://www.expedia.com/lp/flights/del/knu/delhi-to-kanpur](https://www.expedia.com/lp/flights/del/knu/delhi-to-kanpur)\n    *   MakeMyTrip: [https://www.makemytrip.com/flights/new_delhi-kanpur-cheap-airtickets.html](https://www.makemytrip.com/flights/new_delhi-kanpur-cheap-airtickets.html)\n    *   Skyscanner: [https://www.skyscanner.com/routes/del/knu/indira-gandhi-international-to-kanpur.html](https://www.skyscanner.com/routes/del/knu/indira-gandhi-international-to-kanpur.html)\n\n### Hotel Options (Kanpur - 1 night: September 21-22, 2025)\n*   **Cost:** Prices start from $11 per night.\n*   **Recommended Hotels:** The Landmark Towers, Status Club & Resort, and Hotel Vijay Intercontinental. These offer good comfort and amenities.\n*   **Booking:** You can explore and book hotels through:\n    *   TripAdvisor: [https://www.tripadvisor.com/Hotels-g667805-Kanpur_Kanpur_Nagar_District_Uttar_Pradesh-Hotels.html](https://www.tripadvisor.com/Hotels-g667805-Kanpur_Kanpur_Nagar_District_Uttar_Pradesh-Hotels.html)\n    *   EaseMyTrip: [https://www.easemytrip.com/hotels/hotels-in-kanpur/](https://www.easemytrip.com/hotels/hotels-in-kanpur/)\n    *   Hotels.com: [https://in.hotels.com/de682904/hotels-in-kanpur-india/](https://in.hotels.com/de682904/hotels-in-kanpur-india/)\n    *   Kayak: [https://www.kayak.com/Kanpur-Hotels.36039.hotel.ksp](https://www.kayak.com/Kanpur-Hotels.36039.hotel.ksp)\n    *   Booking.com: [https://www.booking.com/city/in/kanpur.html](https://www.booking.com/city/in/kanpur.html)\n\n---\n\n### 2-Day Engagement Ceremony Itinerary (September 21-22, 2025)\n\n**Day 1: Saturday, September 21, 2025 - Arrival and Engagement Ceremony**\n*   **Morning:**\n    *   Depart from Delhi to Kanpur by flight. Ensure you book flights in advance for the best rates and availability.\n*   **Late Morning/Afternoon:**\n    *   Arrive at Kanpur airport (KNU).\n    *   Travel to your pre-booked hotel (e.g., The Landmark Towers, Status Club & Resort).\n    *   Check into your rooms, freshen up, and relax.\n*   **Evening:**\n    *   Attend the engagement ceremony and any related celebratory events.\n\n**Day 2: Sunday, September 22, 2025 - Leisure and Departure**\n*   **Morning:**\n    *   Enjoy a leisurely breakfast at the hotel.\n    *   Depending on the engagement ceremony's schedule from the previous evening, you might have time for a family brunch or some relaxation.\n*   **Late Morning:**\n    *   Check out from the hotel.\n*   **Afternoon:**\n    *   Proceed to Kanpur airport for your return flight to Delhi.\n*   **Evening:**\n    *   Arrive back in Delhi, concluding your trip."
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-6cf2953e-1f79-43e4-97f4-a903ec2a0ad6",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "1b9947c4-2413-490d-9f5f-9f15fb293f19",
+      "timestamp": 1758471924.051711
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "thoughtSignature": "CqYFAdHtim8U0D3BCRM-K_Ju3tBpFCGeYoLs4pau5gEGgdFUtDGG_DYkPxEl0JmD088gP0K5UqYuRWwnU-Henrd0rwgzoNpDC1WM7lL-fx9ds7TPhIRiB7VPMTHhL-dA0Y2eeD_jxPehFKiTn7jW4Z030AATpc2tSztqScxQtQ32HljVDHviKvyQyjO-iLVuZvkTK59VKIiLxFLLRHI8fvW1Qd-dOPOFLqvB8e5FRXTAUfj2YuM0gy_gHNkWFTtViwxwn4Dny4p1U-eQIX0W0YfE1eLyKLfDKavu2dHHI8D4rFWoxJqcXa4UBYF2kh0n3Y76zd2vABT8tpwWK_EPEVIOME6EoZRpXsX43po3mL0hx23BrW1fxSEL4ssvuqZQFj05BC2--fiLmAl6uYUmSHe9DK5tCZrboZcDt3ziXdeQ4dJ6appFWh_WQp-yLiC1yirqD4KWfBB1ATLTlncbWMGMKLkDFOoQLlxX9NnFpi7rvd2HJs1lqGZMvxj9xDgIu9Tu3Ytf9wxmFtUhLkjdfP2fVvSodunvPinl2WdTY_HwUBOjpPFW6Tp5FEJWCklA6lyt3a2R76RUf-hTDlJFC2Ox2M0RBcQn-_xTQLZ1XdPisuPq1DegYZvhSPyg_8araDbWZwBXVTYfR9zQBJomdq4hFtm0ilV8FKzbBRXXOoY9pHQfJHGIYxjhnk2Ol8wRatWxrWX_iRKC8fgQPRifFg_HY1z_CB_V3tVTkUqxCbsifUcm42y1SKwJEGmqn7T2PA0AcBm_rPDMC0khP0SNbz8Gp48P7LlY3--ptMOQlXGmF2jwCliztW4jsTbeMWMSUROulByDZqiPTKLho2r-drNr0KEk6ehkRUFbsCCPe5PAAZFLIeMQHNLgoFpRhxisUSoPoh9Ufyrr",
+            "text": "Here is a 2-day trip plan for your engagement ceremony in Kanpur, accommodating 10 people traveling from Noida, for September 21-22, 2025.\n\n### Trip Summary\nThis plan covers flights from Delhi (as Noida doesn't have an airport) to Kanpur and back, a 1-night hotel stay, and a schedule focused on the engagement ceremony.\n\n### Flight Options (Delhi to Kanpur & Back)\n*   **Dates:** Departing September 21, 2025, returning September 22, 2025.\n*   **Estimated Cost:** One-way flights start from $14 per person, round-trip flights start from $77 per person.\n*   **Booking Links:**\n    *   Yatra: [https://www.yatra.com/flight-schedule/delhi-to-kanpur-flights.html](https://www.yatra.com/flight-schedule/delhi-to-kanpur-flights.html)\n    *   Air India: [https://www.airindia.com/en-us/book-flights/delhi-to-kanpur-flights](https://www.airindia.com/en-us/book-flights/delhi-to-kanpur-flights)\n    *   Expedia: [https://www.expedia.com/lp/flights/del/knu/delhi-to-kanpur](https://www.expedia.com/lp/flights/del/knu/delhi-to-kanpur)\n    *   MakeMyTrip: [https://www.makemytrip.com/flights/new_delhi-kanpur-cheap-airtickets.html](https://www.makemytrip.com/flights/new_delhi-kanpur-cheap-airtickets.html)\n    *   Skyscanner: [https://www.skyscanner.com/routes/del/knu/indira-gandhi-international-to-kanpur.html](https://www.skyscanner.com/routes/del/knu/indira-gandhi-international-to-kanpur.html)\n\n### Hotel Options (Kanpur - 1 Night: September 21-22, 2025)\n*   **Estimated Cost:** Prices start from $11 per night.\n*   **Recommended Hotels:** The Landmark Towers, Status Club & Resort, and Hotel Vijay Intercontinental.\n*   **Booking Links:**\n    *   TripAdvisor: [https://www.tripadvisor.com/Hotels-g667805-Kanpur_Kanpur_Nagar_District_Uttar_Pradesh-Hotels.html](https://www.tripadvisor.com/Hotels-g667805-Kanpur_Kanpur_Nagar_District_Uttar_Pradesh-Hotels.html)\n    *   EaseMyTrip: [https://www.easemytrip.com/hotels/hotels-in-kanpur/](https://www.easemytrip.com/hotels/hotels-in-kanpur/)\n    *   Hotels.com: [https://in.hotels.com/de682904/hotels-in-kanpur-india/](https://in.hotels.com/de682904/hotels-in-kanpur-india/)\n    *   Kayak: [https://www.kayak.com/Kanpur-Hotels.36039.hotel.ksp](https://www.kayak.com/Kanpur-Hotels.36039.hotel.ksp)\n    *   Booking.com: [https://www.booking.com/city/in/kanpur.html](https://www.booking.com/city/in/kanpur.html)\n\n### 2-Day Engagement Ceremony Itinerary (September 21-22, 2025)\n\n**Day 1: Saturday, September 21, 2025 - Arrival and Engagement Ceremony**\n*   **Morning:** Depart from Delhi to Kanpur by flight.\n*   **Late Morning/Afternoon:** Arrive at Kanpur airport, transfer to your pre-booked hotel, check-in, and freshen up.\n*   **Evening:** Attend the engagement ceremony and any related celebratory events.\n\n**Day 2: Sunday, September 22, 2025 - Leisure and Departure**\n*   **Morning:** Enjoy a leisurely breakfast at the hotel. Depending on the previous evening's schedule, you might have time for a family brunch or relaxation.\n*   **Late Morning:** Check out from the hotel.\n*   **Afternoon:** Proceed to Kanpur airport for your return flight to Delhi.\n*   **Evening:** Arrive back in Delhi, concluding your trip."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 810
+          }
+        ],
+        "cachedContentTokenCount": 810,
+        "candidatesTokenCount": 1068,
+        "promptTokenCount": 2700,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2700
+          }
+        ],
+        "thoughtsTokenCount": 144,
+        "totalTokenCount": 3912
+      },
+      "invocationId": "e-6cf2953e-1f79-43e4-97f4-a903ec2a0ad6",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "5f9a0bff-f42f-493c-83db-f40b2b0f3012",
+      "timestamp": 1758471924.058755
+    }
+  ],
+  "lastUpdateTime": 1758471924.058755
+}

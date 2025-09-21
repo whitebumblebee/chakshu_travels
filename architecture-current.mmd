@@ -1,0 +1,36 @@
+flowchart LR
+  subgraph User
+    U[Traveler]
+  end
+
+  subgraph ADK_Web_UI
+    UI[ADK Dev UI]
+  end
+
+  subgraph Exchange_App
+    A[travel_orchestrator (LlmAgent)]
+    DA[data_aggregator (LlmAgent)]
+    IP[itinerary_planner (LlmAgent)]
+    Tools[SerpApi Tools\n(flights, hotels, activities, destination info, tips)]
+  end
+
+  subgraph External_Services
+    GEM[Gemini API]
+    SERP[SerpApi]
+    EMT[EaseMyTrip Website]
+  end
+
+  U --> UI
+  UI --> A
+  A -- AgentTool --> DA
+  A -- AgentTool --> IP
+  A -. final synthesis .-> UI
+
+  A <--> GEM
+  DA <--> GEM
+  IP <--> GEM
+
+  DA --> Tools
+  Tools --> SERP
+
+  A -. booking links .-> EMT

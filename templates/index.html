@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Agent</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 800px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+        
+        .message {
+            margin-bottom: 15px;
+            padding: 12px 16px;
+            border-radius: 18px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        
+        .user-message {
+            background: #007bff;
+            color: white;
+            margin-left: auto;
+        }
+        
+        .agent-message {
+            background: white;
+            color: #333;
+            border: 1px solid #e9ecef;
+            white-space: pre-wrap;
+        }
+        
+        .loading {
+            background: #f8f9fa;
+            color: #666;
+            font-style: italic;
+            animation: pulse 1.5s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulse {
+            from { opacity: 0.6; }
+            to { opacity: 1; }
+        }
+        
+        .input-container {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .input-form {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .message-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #e9ecef;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        .message-input:focus {
+            border-color: #4CAF50;
+        }
+        
+        .send-button {
+            padding: 12px 24px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .send-button:hover {
+            background: #45a049;
+        }
+        
+        .send-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .examples {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .example-button {
+            padding: 8px 16px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .example-button:hover {
+            background: #e9ecef;
+            border-color: #adb5bd;
+        }
+        
+        .share-link {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e7f3ff;
+            border: 1px solid #b8daff;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        
+        .share-link a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .share-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌍 AI Travel Agent</h1>
+            <p>Your intelligent travel planning assistant</p>
+        </div>
+        
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <div class="message agent-message">
+                    Hello! I'm your AI travel planning assistant. I can help you:
+                    
+                    🛫 Search for flights and hotels
+                    🎯 Find activities and attractions  
+                    📅 Create detailed itineraries
+                    💡 Provide travel tips and recommendations
+                    
+                    Just tell me where you want to go and what you're interested in!
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <form class="input-form" id="messageForm">
+                    <input 
+                        type="text" 
+                        class="message-input" 
+                        id="messageInput" 
+                        placeholder="Ask me about your travel plans..."
+                        required
+                    >
+                    <button type="submit" class="send-button" id="sendButton">Send</button>
+                </form>
+                
+                <div class="examples">
+                    <button class="example-button" onclick="useExample('Plan a 5-day trip to Tokyo for 2 people')">Tokyo Trip</button>
+                    <button class="example-button" onclick="useExample('Find budget hotels in Barcelona')">Barcelona Hotels</button>
+                    <button class="example-button" onclick="useExample('What are the best activities in Paris?')">Paris Activities</button>
+                    <button class="example-button" onclick="useExample('Create an itinerary for Rome focusing on history and food')">Rome Itinerary</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const messagesContainer = document.getElementById('messages');
+        const messageForm = document.getElementById('messageForm');
+        const messageInput = document.getElementById('messageInput');
+        const sendButton = document.getElementById('sendButton');
+        
+        function addMessage(content, isUser = false, isLoading = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user-message' : 'agent-message'} ${isLoading ? 'loading' : ''}`;
+            messageDiv.textContent = content;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            return messageDiv;
+        }
+        
+        function useExample(text) {
+            messageInput.value = text;
+            messageInput.focus();
+        }
+        
+        async function sendMessage(message) {
+            addMessage(message, true);
+            const loadingMessage = addMessage('Thinking...', false, true);
+            
+            sendButton.disabled = true;
+            
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: message })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                // Remove loading message
+                loadingMessage.remove();
+                
+                // Add agent response
+                addMessage(data.response, false);
+                
+                // Check if there's a shareable link
+                if (data.itinerary_id) {
+                    const shareDiv = document.createElement('div');
+                    shareDiv.className = 'share-link';
+                    shareDiv.innerHTML = `
+                        📤 <strong>Shareable Itinerary:</strong> 
+                        <a href="/itinerary/${data.itinerary_id}" target="_blank">View & Share Itinerary</a>
+                    `;
+                    messagesContainer.appendChild(shareDiv);
+                    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                }
+                
+            } catch (error) {
+                loadingMessage.remove();
+                addMessage(`Sorry, there was an error: ${error.message}`, false);
+            } finally {
+                sendButton.disabled = false;
+            }
+        }
+        
+        messageForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const message = messageInput.value.trim();
+            if (message) {
+                messageInput.value = '';
+                await sendMessage(message);
+            }
+        });
+        
+        // Auto-focus input on load
+        messageInput.focus();
+    </script>
+</body>
+</html>

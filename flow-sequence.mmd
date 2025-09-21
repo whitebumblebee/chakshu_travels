@@ -1,0 +1,28 @@
+sequenceDiagram
+  autonumber
+  participant User
+  participant UI as ADK Dev UI / React (future)
+  participant Orchestrator as travel_orchestrator
+  participant DataAgg as data_aggregator
+  participant Itin as itinerary_planner
+  participant SERP as SerpApi
+  participant GEM as Gemini API
+
+  User->>UI: Prompt (trip request)
+  UI->>Orchestrator: New message
+  Orchestrator->>GEM: Generate (decide next step)
+  alt Missing details
+    Orchestrator-->>User: Ask for missing (dates/budget/...)
+    User->>UI: Provide details
+    UI->>Orchestrator: Forward details
+  end
+  Orchestrator->>DataAgg: AgentTool(request)
+  DataAgg->>GEM: Decide tools
+  DataAgg->>SERP: flights/hotels/activities/info queries
+  SERP-->>DataAgg: Results
+  DataAgg-->>Orchestrator: JSON summary
+  Orchestrator->>Itin: AgentTool(request summary)
+  Itin->>GEM: Plan itinerary
+  Itin-->>Orchestrator: Day-by-day plan
+  Orchestrator-->>UI: Final synthesis + EaseMyTrip links
+  UI-->>User: Display answer

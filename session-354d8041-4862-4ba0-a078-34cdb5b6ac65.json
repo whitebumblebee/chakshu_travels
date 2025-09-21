@@ -1,0 +1,522 @@
+{
+  "id": "354d8041-4862-4ba0-a078-34cdb5b6ac65",
+  "appName": "exchange",
+  "userId": "user",
+  "state": {},
+  "events": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Plan a 2 day trip from noida to kanpur and back. 10 people are going for engagement ceremony"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-3e999a93-9d6c-4263-9654-ba5b669eb2a9",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "1f99af8b-2343-4bbe-99df-863e01199645",
+      "timestamp": 1758475511.82639
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "thoughtSignature": "CucDAdHtim_jTx39NzOIPKfzu6R6SHdNZMyp06fWPcLtPfDbVmX-irioyh5Kcy7wLPWOv7ts9i-HqFR7io9ZGslujJdQeWPg7rePLFZ8Naw3LquLYBmM_Vavpd017ffSu4zEi_9cGujdHqHNeRzymDXk_jgC-QnJh0RIXrXAWwbRZCsd452QEgx_i12Zg-NvRW-cK39KyXMwZWZ8WnMNUUGvdug_kEvnoz5MOeybpzc7hY0K0mPH4ZrZ1IacjnRvoDkGvOa9FvMXaPon6acHxO9gLeUupWMoYEmaQ9nDKUmS7Cb7smr8NSMn7ALSia67E1wFz5Ac81cOXLef2CJUlSsga5vAOsA7Wi_s1_7bC9XFa_e0jd8T_6pJQCidvO-dHG1nVe1ZDIN-x71OxkiWQIO_ts6MkDPgaYcsZOc7Bpg64pS14jti_i6JNlKvUsnOXC_5lXSWQHCDY7FL1Er3zPUbIpF869Xf9SVyLtPab0o8eLBOZJQr6KwGn7FpTuvK0IhNocdtDXGTSgJH5xq6nVO9eVYboUyhQDRM6AlqKI6A3HwdIhyANJfNnmbQy278wUQIUfMoYpJr9pL4WocW1tDdhk0BIEIXaCLiKUH0LXEeTgcPA9bK3RjN5WJawRQgLhm7sRQ4nvju9g==",
+            "text": "I can help you plan this trip! To get started, please tell me:\n\n*   What are your desired travel dates for the 2-day trip?\n*   What is your estimated budget for the trip?"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 45,
+        "promptTokenCount": 886,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 886
+          }
+        ],
+        "thoughtsTokenCount": 109,
+        "totalTokenCount": 1040
+      },
+      "invocationId": "e-3e999a93-9d6c-4263-9654-ba5b669eb2a9",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "3062ad61-dcfa-4456-b210-c92004c85049",
+      "timestamp": 1758475511.827065
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Travel dates are 29th and 30th\nBudget is 50K INR"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-2c2f2b7a-7b74-4175-86a0-a44217938746",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "e83ada4b-bade-430b-a19f-c3fe9dc65bc1",
+      "timestamp": 1758475535.63714
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "thoughtSignature": "CsEDAdHtim86fNsuh1jIgeOw-ZwtX8EaDg5K6ABcIXvAcmW98vfrUGa2Q_ZJ-5wsASeeC8kqxpGx_nngUyI7JDqvrgsa0nbchwK3j52_IF-d2j0Q6d5pClX8AzMwpJmjIDJocBgO1GeQkQHpH8HklgVbGnlagEHuVW043zbiJu8XSF6vGfGpv_LMJr--WVbYLsL_TNZccS7MeU8NFYZ24rtBPJfmexEIO0SdjEod3K-As_RQyFrFEQQo1BLM_hhnBiHf9LqNvUzG27gCrdVdCvHr0PK7IGQj50Cc9l9M87iV8xCP-x87BB-jeSVI70hYpWZTe47_bV_kfKDOFJG7YT6H88YKoSF04mbrGK5TA49v7eQn8s3yZYWwLXtQ7XtpyvHYyjdhyEQAe99KKZ5tKpb_uwcxPa4etYpiLOHGgjzLU8h1UfQygcFdRHL2kjxfqz2-L0UvW9rlG8UyHtZ8P4udiM3lWRNMCWAO0THlTItZAIhlAq0_il8gUn0hbHmqVZXxb29dwd7dev_eLP8FMnesENg-Be2a-QnFIrb-dYiJdrGVw_lXtIAM6xe4D4gc1_-EyzwlEg0ofD9JfAjeDnDxmoo=",
+            "functionCall": {
+              "id": "adk-a932fefb-632a-4d5a-b4d3-b920b02392d7",
+              "args": {
+                "request": "Trip from Noida to Kanpur for 10 people on 29th and 30th for an engagement ceremony, with a budget of 50,000 INR."
+              },
+              "name": "data_aggregator"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 52,
+        "promptTokenCount": 953,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 953
+          }
+        ],
+        "thoughtsTokenCount": 98,
+        "totalTokenCount": 1103
+      },
+      "invocationId": "e-2c2f2b7a-7b74-4175-86a0-a44217938746",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "32b324e8-b303-4572-8900-dbfd87463ffb",
+      "timestamp": 1758475535.638415
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-a932fefb-632a-4d5a-b4d3-b920b02392d7",
+              "name": "data_aggregator",
+              "response": {
+                "result": "What month and year are your travel dates for the 29th and 30th?"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-2c2f2b7a-7b74-4175-86a0-a44217938746",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "df3ecc97-ac4f-4b41-82ba-fb17f2647f01",
+      "timestamp": 1758475541.906522
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "thoughtSignature": "CqIBAdHtim_hCFV6VxMu1gVez7lwjldnwKg38nHjB5cyfpB0DjHf_yy6bvnjF9Cw9Ey_uU19yQie2He9dWEZ7vpxkoAjVX_EX2_RG0sKBO-JuqVBscDTxk7hr9_hTn9pBXYqVpamAZWKsfEt7ndTBAXAfi6wiNRD__E8zU5katYjUbz3oVUDreFYOB1QKX8GIdDw0s9KfF3T-2YvwInltU4oWnYe",
+            "text": "Please specify the month and year for your travel dates (29th and 30th)."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 676
+          }
+        ],
+        "cachedContentTokenCount": 676,
+        "candidatesTokenCount": 20,
+        "promptTokenCount": 1040,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1040
+          }
+        ],
+        "thoughtsTokenCount": 31,
+        "totalTokenCount": 1091
+      },
+      "invocationId": "e-2c2f2b7a-7b74-4175-86a0-a44217938746",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "e2900fc1-72ae-4ce8-9b8e-ccf903f81227",
+      "timestamp": 1758475541.908071
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "29th and 30th Sept, 2025"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-a7caebb9-cc86-4468-9b90-d5a808d96954",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "a18437e0-9c2c-443a-ba80-d2518cb0d730",
+      "timestamp": 1758475561.470653
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "thoughtSignature": "CokDAdHtim-j9voiOw2VFqKMzIrno_1yTDxRIEuXF7crbrJiv5iupnZE1ZjV0JSSNKl_yOGLr1JKTzLEwt_vlqcENuPb49sf2KoJeV_wIxVK47TYnpoansn5-wY3zpE6iHxCvgT_2RE-lrSaw1cHSrV33nezr0FgIL58m6jDKtXR3oKo0lb6_Jbk9UxknWtZyFXOhBTkuLq56fQTHq1Srda1wIpeeafer_hSDPHWTCxeLk2h2iLcEydltseFbiAtKTBKha_sL_JEkJDCPgI0fODG_Y8NQtzSVWv3v98qbigTCcXUMxMXm_Daec-Qm3Ewz7ndO9TNsWLMu_mJIhMOzWuUP1wkneeY3ma0pPO29ki4AdcypWN6f1-9dXIGfhL7qp6TsW0-WK9gxw_VnmK7GUiCKAJShOAbuQMs34QGA07QyIDnVtXNZg2KaDbv9_bNPd9iHCxoD70jmjXwAMUGzRqPSGVyYsRyCANbnI4Wa3EhNFGT0W4hRws7Uk5pEUJ-Rk2_JMMMS31O0AnF",
+            "functionCall": {
+              "id": "adk-7d8b2067-24d5-4729-ade5-9eaf32579c22",
+              "args": {
+                "request": "Trip from Noida to Kanpur for 10 people on September 29th and 30th, 2025, for an engagement ceremony, with a budget of 50,000 INR."
+              },
+              "name": "data_aggregator"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 60,
+        "promptTokenCount": 1077,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1077
+          }
+        ],
+        "thoughtsTokenCount": 98,
+        "totalTokenCount": 1235
+      },
+      "invocationId": "e-a7caebb9-cc86-4468-9b90-d5a808d96954",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "6222f1a5-30da-416b-a3ab-c69ec7bea41c",
+      "timestamp": 1758475561.472202
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-7d8b2067-24d5-4729-ade5-9eaf32579c22",
+              "name": "data_aggregator",
+              "response": {
+                "result": "```json\n{\n  \"flights\": {\n    \"summary\": \"Flights are available from Delhi (DEL) to Kanpur (KNU) on September 29th, 2025, returning on September 30th, 2025. You can find various options from airlines like Air India and Indigo.\",\n    \"links\": [\n      \"https://www.airindia.com/en-us/book-flights/delhi-to-kanpur-flights\",\n      \"https://www.google.com/travel/flights/flights-from-new-delhi-to-kanpur.html\",\n      \"https://www.expedia.com/lp/flights/del/knu/delhi-to-kanpur\"\n    ]\n  },\n  \"hotels\": {\n    \"summary\": \"Multiple hotel options are available in Kanpur for 10 guests checking in on September 29th and checking out on September 30th, 2025. Top-rated hotels include The Landmark Towers, Status Club & Resort, and Hotel Vijay Intercontinental.\",\n    \"links\": [\n      \"https://www.tripadvisor.com/Hotels-g667805-Kanpur_Kanpur_Nagar_District_Uttar_Pradesh-Hotels.html\",\n      \"https://www.expedia.com/Kanpur-Hotels.d8321.Travel-Guide-Hotels\",\n      \"https://www.booking.com/city/in/kanpur.html\"\n    ]\n  },\n  \"activities\": {\n    \"summary\": \"For your engagement ceremony, Kanpur offers various venues and local attractions. You can explore places like ISKCON Kanpur, Shri Radha Madhav Temple, Nana Rao Park, and consider specialized engagement venues.\",\n    \"links\": [\n      \"https://www.tripadvisor.com/Attractions-g667805-Activities-Kanpur_Kanpur_Nagar_District_Uttar_Pradesh.html\",\n      \"https://www.venuelook.com/engagement-venues-in-kanpur\",\n      \"https://www.holidify.com/places/kanpur/sightseeing-and-things-to-do.html\"\n    ]\n  },\n  \"destination_info\": {\n    \"summary\": \"The best time to visit Kanpur is typically from October to March, when the weather is pleasant for sightseeing. Your trip dates in late September are just before the peak season, but still offer a comfortable climate.\",\n    \"links\": [\n      \"https://www.holidify.com/places/kanpur/best-time-to-visit.html\",\n      \"https://www.tripcrafters.com/travel/kanpur-weather-and-best-time-to-visit-kanpur\"\n    ]\n  }\n}\n```"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-a7caebb9-cc86-4468-9b90-d5a808d96954",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "de890982-c836-4f80-a521-027bd64572fb",
+      "timestamp": 1758475579.20265
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "thoughtSignature": "Ct8FAdHtim-hl9GMg5yoI1ayBChTXuev9nuf7LLyXALWjs2cmP8Mc8xk1Zb6_u_pdLCJvQtwsHfQZ0RHamI4VutxGvU9Fi2efQ3uOpfiXG14OcaATtzMLZYj5dUg-1l2IltgmSe00Tg6I_H3G3tTGbPZYGNAcMzkEdvKz_NElTnhL7JLFlPD2HVumqfZj1WojwsohmiTlSGu8yWmqyzMTWcMb7rpwsE_aNblwiOfhu3ameOftCLckczDHA28vu9dJcTIK29JuuWHkWhKV5e3aio8Q879ik6CPcV5gkN-KFXCzRZ4HxxJvculvAQ9nQb07KrABysYuS4SUL-2Oi1-sR_iYmqA-gIJIG_DR5nYIkYxvr8zkM_fWb00NxnAexMkeMrTidBqoXJuBHh5arAmr0nScfgf0JjxVR36iyF_wYQr-0HklLCOzNYAEDo94MrPSlrZYCgWYDzdF9y2kV9nLS77kygGc5I10tNaOnr11N9e1sZ5YiUuYsEZp41e-FWBUEVfxO2XKkWDsLGo1I7IDRSZJFABjWdYBs8xoU1cxsHp7UO05KxKsyew-56WWvSc7sN2GOJxT-GAWxjqvVcovm5O2Aw5DZOzlRUUOzVYGxO1zsx_s2fq7zXk27WVqIFc2CRONsIJQBJ9tjELVjMaognT7TK36JLFdgpx_Tk1MXNA9ZajD66LaXQR9v-qtzqbOr3d53jzwxU33iSCmtNrnbdc5k3nSxlXJkQdUc0FJFswVNErNKUQnv95N2w_Zgo3ZMH6Kk8FzhAUQNWb8oreDgjljQST8C4wi9RZplGJIQjywmniD9_klp8YYkJUsPuqwC4ArEltJ1fv4EWm1DCcNwJ4Xxf670SbNq746sqKrWpjNlWfQtSSliAeYcR1J-RN8Uw8qIe8RPXEeMna5BfkzVDrR6qnbfvj86haEC9mjyeb1N1nXagFG1TmLsmO2c0tQ-3eq_pnfaVct51tw9Q_gP83",
+            "functionCall": {
+              "id": "adk-e3f3f36c-f318-4cb8-a91f-9b118a512fa1",
+              "args": {
+                "request": "Plan a 2-day itinerary for 10 people traveling from Noida to Kanpur for an engagement ceremony on September 29th and 30th, 2025, with a budget of 50,000 INR. Include travel, accommodation, engagement ceremony considerations, and local attractions based on available flights from Delhi to Kanpur and various hotel options."
+              },
+              "name": "itinerary_planner"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 783
+          }
+        ],
+        "cachedContentTokenCount": 783,
+        "candidatesTokenCount": 91,
+        "promptTokenCount": 1806,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1806
+          }
+        ],
+        "thoughtsTokenCount": 179,
+        "totalTokenCount": 2076
+      },
+      "invocationId": "e-a7caebb9-cc86-4468-9b90-d5a808d96954",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "7cff7469-b6bf-40bb-83f8-f449b0875be2",
+      "timestamp": 1758475579.204756
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-e3f3f36c-f318-4cb8-a91f-9b118a512fa1",
+              "name": "itinerary_planner",
+              "response": {
+                "result": "**Summary:** This 2-day itinerary for 10 people traveling from Noida to Kanpur for an engagement ceremony on September 29th and 30th, 2025, is designed with a very strict budget of 50,000 INR. The plan prioritizes the engagement ceremony and includes essential travel and accommodation, along with limited, budget-friendly local sightseeing. Due to the tight budget, particularly for flights for 10 people, very economical choices for accommodation, transport, and food are assumed.\n\n**Itinerary: Kanpur Engagement Trip (Sept 29-30, 2025)**\n\n**Day 1: September 29th, 2025 - Arrival & Engagement Ceremony**\n\n*   **Morning (6:00 AM - 12:00 PM): Travel from Noida to Kanpur.**\n    *   Arrange shared taxis/vans for the group from Noida to Delhi Airport.\n    *   Take an early morning flight from Delhi to Kanpur (booking well in advance is crucial for budget fares). This will consume a significant portion of the 50,000 INR budget.\n    *   Upon arrival at Kanpur Airport, take pre-booked shared taxis/vans to your accommodation.\n    *   Check into a budget-friendly hotel or guesthouse (e.g., multiple basic rooms or dormitory-style accommodation to keep costs low).\n*   **Afternoon (1:00 PM - 5:00 PM): Engagement Ceremony & Preparation.**\n    *   Have a quick, economical lunch at a local eatery near your accommodation.\n    *   Freshen up and attend the engagement ceremony.\n*   **Evening (6:00 PM - 9:00 PM): Leisure & Local Experience.**\n    *   After the ceremony, enjoy some relaxation time.\n    *   If time and energy permit, take a short, budget-friendly visit to **Phool Bagh** for a leisurely stroll in the park.\n    *   Enjoy a local, economical dinner (consider street food or a basic restaurant for authentic and affordable options).\n\n**Day 2: September 30th, 2025 - Quick Sightseeing & Departure**\n\n*   **Morning (8:00 AM - 12:00 PM): Cultural & Natural Exploration.**\n    *   Have an early and quick breakfast at your hotel or a nearby local eatery.\n    *   Visit **Moti Jheel** for a refreshing start, offering a pleasant environment for a walk.\n    *   Alternatively, explore the historical **Kanpur Memorial Church** known for its Gothic architecture.\n    *   Consider a brief visit to **Nana Rao Park** for some greenery and historical monuments.\n*   **Afternoon (12:00 PM - 4:00 PM): Lunch & Departure Preparations.**\n    *   Enjoy a final economical lunch in Kanpur.\n    *   Check out from your accommodation.\n    *   Travel back to Kanpur Airport by pre-booked shared taxis/vans.\n    *   Take your return flight from Kanpur to Delhi.\n*   **Evening (4:00 PM onwards): Return to Noida.**\n    *   Arrange shared taxis/vans for the journey from Delhi Airport back to Noida.\n\n**Budget Considerations & Important Notes:**\n\n*   **Flights:** Securing round-trip flights for 10 people from Delhi to Kanpur within the 50,000 INR budget will be the biggest challenge. Expect flight costs to consume 30,000-40,000 INR of the budget. Booking far in advance and opting for budget airlines are essential.\n*   **Accommodation:** With the remaining budget (approx. 10,000-20,000 INR), accommodation for 10 people for one night will need to be very basic. Look for guesthouses, budget hotels offering shared rooms, or dormitory-style options.\n*   **Local Transport:** Utilize shared auto-rickshaws or pre-book a large tempo traveler/mini-bus for the group's local commutes to minimize costs.\n*   **Food:** Prioritize local eateries and street food for economical and authentic meals. The budget allows for very basic food expenses.\n*   **Engagement Ceremony Expenses:** This itinerary does not include personal expenses related to the engagement ceremony itself (e.g., gifts, attire).\n*   **Flexibility:** Be prepared to adjust activities based on real-time costs, time availability, and the group's preferences.\n*   **Booking:** It is highly recommended to book flights and accommodation as early as possible to avail the best prices and ensure availability for a group of 10."
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-a7caebb9-cc86-4468-9b90-d5a808d96954",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "752d21a5-11e7-4eed-8607-7cea3c9dc918",
+      "timestamp": 1758475627.794183
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "thoughtSignature": "CuwCAdHtim_vBsKqFQkJwnSRDtQYpATdoeCyn52FXQ5FCllfr9_hOwN7Ga9Mf4muQJCIkIT6z9yUa5pUQPTn9L743YvngZpkd8JuYAwxUNvtCvpj4hGdc7Q8CFnWxIhgi8690cryLGyUtxqv3CT8n09jQ-0ZJEG_wkXYQEG8veQtLuD6IegNbCwoLWF1BylKfwEZ5zNEvNvu2rypX8md3zIdfUNlmfWsCW1pCyOk8AJjp7ts2beq_8S4q42gM-F6LJBMUa4QzlLbhueY3NnJwLaU3aa2TyS2brKtriMMcMfQQbuC3Ry68DzjxSNoJK-vQHaLSJRoQatUHb3dQhVqHFpZ3uytfkYoxo7Lln_v-xpvhH8fmVImtQtKL371sK21sc3WIkbLVONDrHo5qNr0Cjz7ZpVd0QD9aohB_7Qg09QRQstgFU6iqarU1qG6YQ58haXJ_GxnH9ReVexZ1x7RbE1s9cu90Nyon19cvAI01A==",
+            "text": "Your 2-day trip to Kanpur for an engagement ceremony, from September 29th to 30th, 2025, for 10 people with a budget of 50,000 INR, is planned as follows:\n\n**Trip Summary:**\nThis itinerary is designed with a strict budget of 50,000 INR, focusing on the engagement ceremony while incorporating essential travel, accommodation, and limited budget-friendly sightseeing. Due to the number of travelers and budget, economical choices for flights, accommodation, and local transport are paramount.\n\n**Itinerary: Kanpur Engagement Trip (Sept 29-30, 2025)**\n\n*   **Day 1: September 29th, 2025 - Arrival & Engagement Ceremony**\n    *   **Morning (6:00 AM - 12:00 PM): Travel from Noida to Kanpur.**\n        *   Arrange shared taxis/vans from Noida to Delhi Airport.\n        *   Take an early morning flight from Delhi (DEL) to Kanpur (KNU).\n        *   Upon arrival, take pre-booked shared taxis/vans to your accommodation.\n        *   Check into a budget-friendly hotel or guesthouse.\n    *   **Afternoon (1:00 PM - 5:00 PM): Engagement Ceremony & Preparation.**\n        *   Enjoy an economical lunch at a local eatery.\n        *   Attend the engagement ceremony.\n    *   **Evening (6:00 PM - 9:00 PM): Leisure & Local Experience.**\n        *   If time permits, visit **Phool Bagh** for a stroll.\n        *   Enjoy a local, economical dinner (consider street food or a basic restaurant).\n\n*   **Day 2: September 30th, 2025 - Quick Sightseeing & Departure**\n    *   **Morning (8:00 AM - 12:00 PM): Cultural & Natural Exploration.**\n        *   Have an early and quick breakfast.\n        *   Visit **Moti Jheel** for a refreshing start, or explore the historical **Kanpur Memorial Church**.\n        *   Consider a brief visit to **Nana Rao Park**.\n    *   **Afternoon (12:00 PM - 4:00 PM): Lunch & Departure Preparations.**\n        *   Enjoy a final economical lunch in Kanpur.\n        *   Check out from your accommodation.\n        *   Travel back to Kanpur Airport by pre-booked shared taxis/vans.\n        *   Take your return flight from Kanpur to Delhi.\n    *   **Evening (4:00 PM onwards): Return to Noida.**\n        *   Arrange shared taxis/vans for the journey from Delhi Airport back to Noida.\n\n**Budget Considerations & Important Notes:**\n\n*   **Flights:** Round-trip flights for 10 people from Delhi to Kanpur will likely consume the majority of your 50,000 INR budget (estimated 30,000-40,000 INR). Book well in advance and consider budget airlines.\n*   **Accommodation:** The remaining budget (approx. 10,000-20,000 INR) for one night for 10 people necessitates basic accommodation like guesthouses, budget hotels with shared rooms, or dormitory-style options.\n*   **Local Transport:** Utilize shared auto-rickshaws or pre-book a tempo traveler/mini-bus for the group's local commutes to minimize costs.\n*   **Food:** Prioritize local eateries and street food for economical and authentic meals.\n*   **Engagement Ceremony:** This itinerary does not include personal expenses related to the ceremony (gifts, attire, etc.).\n*   **Booking:** Book flights and accommodation as early as possible for the best prices and availability for a group of 10.\n\n**Book on EaseMyTrip:**\n\n*   **Flights:** [https://www.easemytrip.com/flights.html](https://www.easemytrip.com/flights.html)\n    *   Suggested inputs:\n        *   **From:** Delhi (DEL)\n        *   **To:** Kanpur (KNU)\n        *   **Departure:** 29 Sep 2025\n        *   **Return:** 30 Sep 2025\n        *   **Travellers:** 10\n*   **Hotels:** [https://www.easemytrip.com/hotels/](https://www.easemytrip.com/hotels/)\n    *   Suggested inputs:\n        *   **Destination:** Kanpur\n        *   **Check-in:** 29 Sep 2025\n        *   **Check-out:** 30 Sep 2025\n        *   **Rooms & Guests:** Adjust for 10 guests across multiple rooms if needed.\n*   **Holidays:** [https://www.easemytrip.com/holidays/](https://www.easemytrip.com/holidays/)"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1632
+          }
+        ],
+        "cachedContentTokenCount": 1632,
+        "candidatesTokenCount": 1092,
+        "promptTokenCount": 2935,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2935
+          }
+        ],
+        "thoughtsTokenCount": 66,
+        "totalTokenCount": 4093
+      },
+      "invocationId": "e-a7caebb9-cc86-4468-9b90-d5a808d96954",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "8c54b58b-9fd1-46ec-8d69-559c03a8fc49",
+      "timestamp": 1758475627.798643
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Maine socha h mai lucknow bhi ghumunga uske bad ek din. TOh baki 9 log noida laut jaenge 2nd day. Par mai lucknow jaunga ek din ghumne phr wps aaunga. ab iska btaiye mujhe"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-16f32771-ac0f-4e1e-b9d8-a0ff889f1cc9",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "fbc276fd-52f2-42df-880f-ca578e75bccf",
+      "timestamp": 1758475704.022503
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "thoughtSignature": "CvIVAdHtim8jTB-Dr3vH61r6xFH2XeU2_RK6CmsiN8CHAVfD_MQM1FripZqAPRUMBzNbCFdR39TF3GB6-lKSMwfHdNhhTts-0UjYNXsRDbepwLQofSeEq2ZmAUZE2pmQ6jyPkkz86NzovLkNZiNXOPA7jNIdIWAhFYNUbkCvEuySJ1k6FqhyYIa21Fkzx3makXWR5sqklYWmc92nWjUxty_7v4L-LbEIZy2Je4_CSE8YZgqRxXWphuBvfev_RFPFaQEmGLtr6nLfVWUCxv8SM77RSXXT7tsZpSoXr820A2wQWutcjdLZQKb3-7whLeUvxjoBQDOP12YyewTpcagTREb5l9uShFSv2SsdLC2iRbA4M2vnOZ5PWM46slS6I7NTMUQxV-nxCWPTpV0lz4OeKbsI8ySFpYpPoyyy7Rr_goSRrSGheU9ebZ88SEo1HOObl40jynRTgJCxdVajZtqe4o2BHzzo9F7Zd5ocYjLAXNRf5gKLF6W0toHuiVNJKyJ2oPwr8_2PaRkQBDw4x2M4rFXTaJHpxUpyVQu8AQj3LEt49rKqOiyWan7xwcBUrMCWfB5-ti_jDxsBjT0qVDl_iUKk588EWC4rIKs3ZedHhOsnzcmCbjCUb0gX-sFWHUgiKRgybNwpciXOEU4BYBwxzuPAVNKaJYGmue5gEEuhlbqsofnvVVnmrbVBKJNiFzK0hNAzkiPiJMuOlX6QNo0UDCFqEh0X2rX-9u-c_er-EezgtusAtF25UBIyyisoom3F5PfwdK43OjSlTWE3pgG-rhQaD268B0ZBxo58SVVLAGhi_dEXqyXJb3vS97AV3179B5F8eMf29bmb-Zs6r5xn_f5hJloNHKbx22Qr341k669COPXMVacac8bOXUC7jGT1G0LUUgQvcwUCoSj_I7jNSyh0cw3lG8kDZceNludAOVWBudhaziEDEXt-UW-zQFkQIGExVr_eegyP7JCGznYMZmKjZ0apGodfPe_lXbl79wJVdKrbxRTWePUb_0ChEKMUvD3s93qvvj81J4FlFz0BaZ6gaTLrOJKZwo37F7Nt28oFfR7OAhaocy7_r5PkKxyAKHfghc0BktrHlirlgiyLc--9iT7k6Hnv9v7Be4OE-69Jw1GEV7sKe-5xMvGxZ2pyUKcHSYAEMD1yl5OvzzO2pi_NSdFCl5w3QbJcMHUPTtSUqnUICVwdJK1g2qFqKt9J2nJSQl8OvKSgZ499VPSv-qk-hJO_OxLAu-0lIaRkGsIfUhzWNE5MEjRQa4M7Z0-gaNcaNmjNZm-LOZ4rZlpPak98gj3NTd_ubK49QR5_8evs4AEkRTQJcqppjFSkMh3k8ofLEG3naX6yQaUIaz37l8OBb2QoCbUzrPBYLxLX_30sIsw-YUQ9lGq1EBFj-5gTbteqr794chCZpWZT9yi5CTbhlKa3vnVy3oyek_a2AONJSr5n7zB2_FVaTQN_2Bp-5VWUZiyVeG75FoUyjBjNBxvMRNLfRxKgD4U2OMZkVxqzZVqibjKYZNekN9wWRiBlqKa0UN9qg5zdBdi-Gbue--MXYenn8B8yoBATDHr7P2e-pXdKEh9ItHhSB-Kywp1N1tPk-RSJXdbqm6MzJzIR2AZjclyymdxq54EtjW1P4pHgp9YBmyZSntOjHz7xRjPFFVz0I6Nu02ctafMLqNeYeibqjMqcIswATX3H6-JidAfkvxb7tuLqPo0vICLk-SBaDWyUsSuV06RTixdh-WzQgUJZ7g9J8E9heZwp63xqfxxe46rgSY7N5x3EyolOJgrtPQTRllx0RhXFnTLe4wzcmunQCZtErcNh0JX-545Z9ne2I7vGUEpiVbGxatlduykv-zXQi107gBAlFab4VDumC5uLaEjUvjNxzmk10F45cFfzMKgEYHzRBVjfb23DrwbxxkKWmiBzA2GPeB9Ze39aBdausFuHHnU0h3UNSJiA-nEVx_nbxvMB1fDwJgx4NVyqtADWUh3UZ7SG0yFUo3J_IVT4nlC5vVIbEms0RsqEEHDfl5FulOhb8-CLWxlmierrx42eerbI1FNCZ1kjBO8v3An70uKN_L57nLWwK-2ub91KaOo_HqSkpdpE3wgjIJdgW_86ZLax6VIBnm4kydEcVfYkHljytsAfgfjJBMWneCIosrOF7aFuFMFx710KLvTkgjTlBmqEq2ktPojvL2kZE6tZ4pfeOfwY5p9F7MES1tvnjQjviU6AS6FDzGVtZlNIrZgT6YiqLXv9y5oaqygSkxKUhUHOok00DzE7I88MYBIIF-ZOo5S1vhtN4xE_JsxTNyL9jP_Hkb_Jjd0Z-vTcT0kyleA6A7zrcNlZecaGM-Iu3JDrzFNUZWw0I8sgszut2n2GMuNWLebPZxVavDoGmTkK10liNNo_MKWB6_1W1kjVbFM-22KL7nWozgL2XOrjJycJLLQOKZW4QuUR-BY0x8nFELfQI_3tgxgzys9njhW0HAV78BbtO8LK6jbikxJ8DSX0dWso3x8ZRhXKG2oNLrsLgVcTXNWLm1DIW9k4fnIspo-b0qYBG-zLI8FdIe9zyMnOqoJN5j1YgXjgAO9NQkJ35SzdxE5tldEjb0e0V-vfqJNou9PZWIxUzUwz5oonIiiN4TYblOL56ZjAyG_L1lTMEaO_zlu22YIeOS8_Im36GMBDY9dZYM_rMYcTEU5hLg5h0Fp7mcHrur5jcLtmrOfRP_K4B4Uv5cQqXYcvrGefYGza9ooRa-f3BhiqufV4nyvMLmAnbvstOgeJqdb901CMj5z1MNDlJiNaLafGd2lpcCMgpEbhqmqsB96sWs5Ovg7Oio1o-BseWx6xhs5KeoS69Vgm5skwDqoyZpfFMX0n9GY0vY_7cXF9rvjjN5jzEECeXXn862Aj55zYWeWiXkX3xwUhlzvBi7AmUGKy4vCsWsehOh10QPwpXtHTczFoQTCMdAY_GxEA95T2Z7K5dHGZWTf6RAOlPBCs978v0aQuxtTdIdA7iOaC1F2cVYQuxnfntGiStMjG46_jKJCehRqbtfS9LIS55Q4OaElDS0wZ1Fmhv4c0zKgR31lVIEKLRO53zvyZLZ-B_aYW5IxzYMBXmagjLcWuzWsUDh9oI1QQ-1sRZk3-kU55fOJERT5q3Q5ZuauRYBl2nWI9rQDpSqnSiK79PdIUQ_V_aLXzmrdTm3ctdNPu3o6tAwd_ToUzKZ6NhY3vcVY1JZcFTiTs_12F4B1GuQIFMNobrIPO4qH3bPmDeQpHeVvd6xcUeJUhGFPZSjDyatZvacKklIGj8a44oQO0BHVDIxMMUlArX6QLvyrIsNIdphKkPYfHfsDtxfced7uaElR2GqwRsF0a3rkC-byru9Ca_tHJTETQRu1i6WxQi9kOD5POQOM4YRp2wLzQTf0SBuf2T-stQLsMW2GsabBY58EpgaJHal8o_xrxIUw071GBZHZEMEmNNuWi_78Cod0QeJQh6yjTF3XV9GJ2BcdDsaUYGj-wdlDZK9COkw76X32wKIm8klI-s0U7SiMXcJAnG7JePRFJfTEZi7MdHy_fq3VAuir3IC84m0rxADznpSu7Z1wyx85VOHLTw1rTRwG43MM9eX18TJzuoQDVnawSvaskbB__aKy57bGlRg6T4iNFD1i7JTmW3girwfVZzyb4AFhpiZJqLtajMyTAs65btYtWLTUNim_SxZiIFcpCjJMR3ERaGKjiqevuizTO71WSnTxfjaWwdRyAcljXtEib",
+            "text": "Okay, I understand! You'd like to extend your trip to include a day in Lucknow, while the other 9 people return to Noida on September 30th.\n\nHere is a revised itinerary:\n\n"
+          },
+          {
+            "functionCall": {
+              "id": "adk-39a82e57-89c2-40a5-8bf2-04538f63691c",
+              "args": {
+                "request": "Update the 2-day Kanpur itinerary for 10 people (Sept 29-30, 2025, budget 50,000 INR) to include a 1-day extension for one person to Lucknow. On Sept 30th, 9 people return to Noida from Kanpur, while one person travels from Kanpur to Lucknow. This person will spend Oct 1st, 2025 sightseeing in Lucknow and then return to Noida on Oct 1st, 2025. Please include travel options for Kanpur to Lucknow, Lucknow sightseeing, and Lucknow to Noida, and highlight the budget implications for the individual's extended trip."
+              },
+              "name": "itinerary_planner"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 199,
+        "promptTokenCount": 4087,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 4087
+          }
+        ],
+        "thoughtsTokenCount": 749,
+        "totalTokenCount": 5035
+      },
+      "invocationId": "e-16f32771-ac0f-4e1e-b9d8-a0ff889f1cc9",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "f2183d26-3e2a-4111-a0f1-0546b28a7cb5",
+      "timestamp": 1758475704.024441
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-39a82e57-89c2-40a5-8bf2-04538f63691c",
+              "name": "itinerary_planner",
+              "response": {
+                "result": "Here's an updated 3-day itinerary for your group, with a 1-day extension for one person to Lucknow:\n\n**Summary:** This itinerary covers a 2-day trip to Kanpur for 10 people, including a historical and cultural exploration of the city. For one individual, the trip extends for an additional day to Lucknow, focusing on its rich heritage and culinary delights, with travel logistics and budget considerations highlighted.\n\n---\n\n**Kanpur & Lucknow Itinerary (Sept 29 - Oct 1, 2025)**\n\n**Travelers:** 10 people (Kanpur), 1 person (Lucknow extension)\n**Budget (Kanpur):** 50,000 INR\n**Budget (Lucknow Extension):** Additional estimated 7,000 - 10,000 INR\n**Dates:** Sept 29 - Oct 1, 2025\n\n**Day 1: Monday, Sept 29, 2025 - Kanpur Exploration (10 People)**\n\n*   **Morning (Arrival & Heritage):** Arrive in Kanpur. Check into accommodation. Visit Dwarkadhish Temple and explore the historical Moti Jheel area.\n*   **Afternoon (Museum & Lunch):** Enjoy lunch at a local restaurant. Head to the Kanpur Sangrahalaya (Kanpur Museum) to learn about the city's history.\n*   **Evening (Leisure & Dinner):** Relax at your accommodation or explore local markets. Enjoy a group dinner featuring local Awadhi cuisine.\n\n**Day 2: Tuesday, Sept 30, 2025 - Kanpur & Departure (9 People) / Kanpur to Lucknow (1 Person)**\n\n*   **Morning (Nature & Spirituality):** Visit the Allen Forest Zoo for a refreshing start. Afterwards, pay respects at the JK Temple, known for its unique architecture.\n*   **Late Morning (Kanpur Group Departure):**\n    *   **9 People:** Depart from Kanpur back to Noida by pre-booked bus, train (e.g., Shatabdi Express), or private cabs. (Included in main budget)\n*   **Afternoon (Individual Travel to Lucknow):**\n    *   **1 Person:** Have lunch in Kanpur.\n    *   **Travel Option (Kanpur to Lucknow):**\n        *   **Train:** Book a comfortable AC chair car on an intercity train (e.g., Gomti Express, Lucknow Jn. Intercity). Journey: ~1.5 - 2 hours. Cost: ~200-400 INR.\n        *   **Cab/Taxi:** Hire a private cab for direct travel. Journey: ~1.5 - 2 hours. Cost: ~1500-2500 INR.\n        *   **Bus:** State-run or private buses are frequently available. Journey: ~2 hours. Cost: ~150-300 INR.\n    *   Arrive in Lucknow, check into pre-booked accommodation.\n*   **Evening (Lucknow Individual Leisure):** Relax and explore the immediate vicinity around your Lucknow accommodation. Enjoy a light dinner.\n\n**Day 3: Wednesday, Oct 1, 2025 - Lucknow Sightseeing & Departure (1 Person)**\n\n*   **Morning (Heritage & History):** Visit Bara Imambara and Chota Imambara, marveling at their architectural grandeur and historical significance. Don't miss the Bhool Bhulaiya.\n*   **Afternoon (Culture & Cuisine):** Explore the Rumi Darwaza and Husainabad Clock Tower. Enjoy a traditional Lucknowi lunch (Tundey Kababi or similar).\n*   **Late Afternoon (Shopping & Departure Preparation):** Indulge in some light shopping for Chikan embroidery or local sweets.\n*   **Evening (Lucknow to Noida Travel):**\n    *   **Travel Option (Lucknow to Noida):**\n        *   **Train:** Book an AC chair car or sleeper class on an overnight train to Delhi/Noida (e.g., Lucknow Mail, Kaifiyat Express). Journey: ~6-8 hours. Cost: ~500-1200 INR.\n        *   **Flight:** Fly from Lucknow Airport (LKO) to Delhi Airport (DEL), then take a cab/metro to Noida. Journey: Flight ~1 hour, plus airport transfers. Cost: ~3000-6000 INR (can vary greatly).\n        *   **Bus:** Overnight luxury buses are available from Lucknow to Noida/Delhi. Journey: ~7-9 hours. Cost: ~700-1500 INR.\n        *   **Private Cab:** Long-distance private cab. Cost: ~5000-8000 INR.\n    *   Depart for Noida.\n\n---\n\n**Budget Implications for the Individual's Extended Trip to Lucknow:**\n\nThe additional cost for the one person extending to Lucknow for one day (Oct 1st) would primarily include:\n\n1.  **Kanpur to Lucknow Travel:** ~200 - 2500 INR (depending on mode: train/bus vs. private cab)\n2.  **Accommodation in Lucknow (1 night):** ~1500 - 3000 INR (for a mid-range hotel/guesthouse)\n3.  **Local Sightseeing Transport in Lucknow:** ~500 - 1000 INR (auto-rickshaws, cabs)\n4.  **Meals in Lucknow (Lunch, Dinner, Breakfast):** ~1000 - 2000 INR\n5.  **Lucknow to Noida Travel:** ~500 - 8000 INR (depending on mode: train/bus vs. flight/private cab)\n6.  **Entry Fees (Lucknow attractions):** ~200 - 500 INR\n\n**Estimated Total Additional Budget for Lucknow Extension:** **7,000 - 10,000 INR** (This is an estimate and can vary based on choices of travel, accommodation, and dining.)"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-16f32771-ac0f-4e1e-b9d8-a0ff889f1cc9",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "34919d4a-96bb-495b-be99-b540aa8b44ad",
+      "timestamp": 1758475721.947792
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Here's the revised 3-day itinerary, incorporating your solo extension to Lucknow!\n\n**Trip Summary:**\nThis itinerary first covers a 2-day trip for 10 people to Kanpur for the engagement ceremony and local exploration. Afterwards, 9 people will return to Noida, while you will extend your trip for one day to explore the cultural and culinary delights of Lucknow before returning to Noida.\n\n---\n\n**Kanpur & Lucknow Itinerary (Sept 29 - Oct 1, 2025)**\n\n**Travelers:** 10 people (Kanpur), 1 person (Lucknow extension)\n**Budget (Kanpur Group):** 50,000 INR\n**Estimated Additional Budget (Lucknow Extension):** 7,000 - 10,000 INR\n**Dates:** September 29 - October 1, 2025\n\n**Day 1: Monday, September 29, 2025 - Kanpur Exploration (10 People)**\n\n*   **Morning (Arrival & Heritage):** Arrive in Kanpur from Noida (via Delhi if flying). Check into your budget-friendly accommodation. Visit Dwarkadhish Temple and explore the historical Moti Jheel area.\n*   **Afternoon (Engagement Ceremony & Lunch):** Enjoy lunch at a local restaurant. Attend the engagement ceremony.\n*   **Evening (Leisure & Dinner):** Relax at your accommodation. Enjoy a group dinner featuring local Awadhi cuisine.\n\n**Day 2: Tuesday, September 30, 2025 - Kanpur & Group Departure / Individual Travel to Lucknow**\n\n*   **Morning (Nature & Spirituality):** Visit the Allen Forest Zoo for a refreshing start. Afterwards, pay respects at the JK Temple, known for its unique architecture.\n*   **Late Morning (Kanpur Group Departure - 9 People):**\n    *   The 9 individuals will depart from Kanpur back to Noida. This can be done by pre-booked bus, train (e.g., Shatabdi Express to Delhi, then taxi to Noida), or private cabs. This travel is included in your main budget.\n*   **Afternoon (Individual Travel to Lucknow - 1 Person):**\n    *   You will have lunch in Kanpur.\n    *   **Travel Options (Kanpur to Lucknow):**\n        *   **Train:** Book an AC chair car on an intercity train (e.g., Gomti Express, Lucknow Jn. Intercity). Journey: ~1.5 - 2 hours. Cost: ~200-400 INR.\n        *   **Cab/Taxi:** Hire a private cab for direct travel. Journey: ~1.5 - 2 hours. Cost: ~1500-2500 INR.\n        *   **Bus:** State-run or private buses are frequently available. Journey: ~2 hours. Cost: ~150-300 INR.\n    *   Arrive in Lucknow and check into your pre-booked accommodation.\n*   **Evening (Lucknow Individual Leisure):** Relax and explore the immediate vicinity around your Lucknow accommodation. Enjoy a light dinner.\n\n**Day 3: Wednesday, October 1, 2025 - Lucknow Sightseeing & Departure (1 Person)**\n\n*   **Morning (Heritage & History):** Visit Bara Imambara and Chota Imambara, marveling at their architectural grandeur and historical significance. Don't miss the Bhool Bhulaiya.\n*   **Afternoon (Culture & Cuisine):** Explore the Rumi Darwaza and Husainabad Clock Tower. Enjoy a traditional Lucknowi lunch (consider Tundey Kababi or similar).\n*   **Late Afternoon (Shopping & Departure Preparation):** Indulge in some light shopping for Chikan embroidery or local sweets.\n*   **Evening (Lucknow to Noida Travel):**\n    *   **Travel Options (Lucknow to Noida):**\n        *   **Train:** Book an AC chair car or sleeper class on an overnight train to Delhi/Noida (e.g., Lucknow Mail, Kaifiyat Express). Journey: ~6-8 hours. Cost: ~500-1200 INR.\n        *   **Flight:** Fly from Lucknow Airport (LKO) to Delhi Airport (DEL), then take a cab/metro to Noida. Journey: Flight ~1 hour, plus airport transfers. Cost: ~3000-6000 INR (can vary greatly).\n        *   **Bus:** Overnight luxury buses are available from Lucknow to Noida/Delhi. Journey: ~7-9 hours. Cost: ~700-1500 INR.\n        *   **Private Cab:** Long-distance private cab. Cost: ~5000-8000 INR.\n    *   Depart for Noida.\n\n---\n\n**Budget Implications for Your Individual Extended Trip to Lucknow:**\n\nThe additional cost for your one-day extension to Lucknow would primarily include:\n\n1.  **Kanpur to Lucknow Travel:** ~200 - 2500 INR (depending on mode: train/bus vs. private cab)\n2.  **Accommodation in Lucknow (1 night):** ~1500 - 3000 INR (for a mid-range hotel/guesthouse)\n3.  **Local Sightseeing Transport in Lucknow:** ~500 - 1000 INR (auto-rickshaws, cabs)\n4.  **Meals in Lucknow (Lunch, Dinner, Breakfast):** ~1000 - 2000 INR\n5.  **Lucknow to Noida Travel:** ~500 - 8000 INR (depending on mode: train/bus vs. flight/private cab)\n6.  **Entry Fees (Lucknow attractions):** ~200 - 500 INR\n\n**Estimated Total Additional Budget for Lucknow Extension:** **7,000 - 10,000 INR** (This is an estimate and can vary based on your choices of travel, accommodation, and dining.)\n\n---\n\n**Book on EaseMyTrip:**\n\n*   **Flights:** [https://www.easemytrip.com/flights.html](https://www.easemytrip.com/flights.html)\n    *   **For the group (Noida to Kanpur and back):**\n        *   **From:** Delhi (DEL)\n        *   **To:** Kanpur (KNU)\n        *   **Departure:** 29 Sep 2025\n        *   **Return:** 30 Sep 2025\n        *   **Travellers:** 10\n    *   **For your individual return from Lucknow:**\n        *   **From:** Lucknow (LKO)\n        *   **To:** Delhi (DEL)\n        *   **Departure:** 01 Oct 2025\n        *   **Travellers:** 1\n*   **Hotels:** [https://www.easemytrip.com/hotels/](https://www.easemytrip.com/hotels/)\n    *   **For Kanpur (Group):**\n        *   **Destination:** Kanpur\n        *   **Check-in:** 29 Sep 2025\n        *   **Check-out:** 30 Sep 2025\n        *   **Rooms & Guests:** Adjust for 10 guests across multiple rooms.\n    *   **For Lucknow (Individual):**\n        *   **Destination:** Lucknow\n        *   **Check-in:** 30 Sep 2025\n        *   **Check-out:** 01 Oct 2025\n        *   **Rooms & Guests:** 1 room, 1 guest.\n*   **Holidays:** [https://www.easemytrip.com/holidays/](https://www.easemytrip.com/holidays/)"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 3360
+          }
+        ],
+        "cachedContentTokenCount": 3360,
+        "candidatesTokenCount": 1711,
+        "promptTokenCount": 5654,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 5654
+          }
+        ],
+        "totalTokenCount": 7365
+      },
+      "invocationId": "e-16f32771-ac0f-4e1e-b9d8-a0ff889f1cc9",
+      "author": "travel_orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "52177ac4-f424-404d-aad6-4631a7e7e56e",
+      "timestamp": 1758475721.949511
+    }
+  ],
+  "lastUpdateTime": 1758475721.949511
+}

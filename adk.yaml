@@ -1,0 +1,39 @@
+name: ai-travel-agent
+version: 1.0.0
+description: Intelligent travel planning assistant using Google ADK
+
+# Main agent configuration
+agent:
+  module: agent
+  variable: agent  # Exported agent instance in agent.py
+  
+# Environment configuration
+environment:
+  python_version: ">=3.8"
+  
+# Required environment variables
+env_vars:
+  - SERPAPI_KEY
+  - GOOGLE_AI_API_KEY
+
+# Optional configuration
+web:
+  port: 8000
+  host: "0.0.0.0"
+  
+# Agent metadata
+metadata:
+  capabilities:
+    - travel_planning
+    - flight_search
+    - hotel_search
+    - activity_recommendations
+    - multi_agent_coordination
+  
+  apis:
+    - name: SerpApi
+      description: Search API for travel information
+      required: true
+    - name: Google AI
+      description: LLM for agent intelligence
+      required: true

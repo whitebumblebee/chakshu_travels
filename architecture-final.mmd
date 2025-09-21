@@ -1,0 +1,35 @@
+flowchart LR
+  subgraph User
+    U[Traveler]
+  end
+
+  subgraph Frontend
+    FE[React Web App]
+  end
+
+  subgraph Backend
+    API[FastAPI Service]
+    Orchestrator[travel_orchestrator (LlmAgent)]
+    DataAgg[data_aggregator (LlmAgent)]
+    Itin[itinerary_planner (LlmAgent)]
+    Tools[SerpApi Tools\n(flights, hotels, activities, destination info, tips)]
+  end
+
+  subgraph External_Services
+    GEM[Gemini API]
+    SERP[SerpApi]
+    EMT[EaseMyTrip Website]
+  end
+
+  U --> FE --> API --> Orchestrator
+  Orchestrator -- AgentTool --> DataAgg
+  Orchestrator -- AgentTool --> Itin
+  Orchestrator -. final synthesis .-> API -. JSON/Markdown .-> FE
+
+  Orchestrator <--> GEM
+  DataAgg <--> GEM
+  Itin <--> GEM
+
+  DataAgg --> Tools --> SERP
+
+  FE -. booking links .-> EMT
