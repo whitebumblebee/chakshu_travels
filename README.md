@@ -1,6 +1,6 @@
 # 🌍 AI Travel Agent - Chakshu
 
-A **proper Google ADK travel planning agent** with multi-agent orchestration, following official ADK patterns and best practices.
+A **Google ADK travel planning agent** with multi-agent orchestration, following official ADK patterns and best practices.
 
 ## 🏗️ Architecture
 
@@ -96,7 +96,7 @@ The `TravelPlanningOrchestrator` is the root agent that:
 - **DataAggregationAgent**: Aggregates data from multiple sources in parallel
 - **Tool Integration**: Each agent uses specialized tools for specific tasks
 
-### Proper ADK Patterns Used
+### ADK Patterns Used
 
 ✅ **LlmAgent inheritance** with proper initialization  
 ✅ **Tool classes** extending ADK Tool base class  
@@ -327,7 +327,7 @@ adk web --debug --log-level=debug
 python -c "from agent import agent; print(agent.name)"
 ```
 
-## 🎖️ Why This Implementation Is Correct
+## 🎖️ Good Stuff about the implementation
 
 ### Follows ADK Best Practices
 
@@ -354,16 +354,5 @@ python -c "from agent import agent; print(agent.name)"
 ✅ **ADK command support** (`adk web`, `adk run`)  
 ✅ **Extensible architecture** for adding new capabilities
 
-## 📝 Next Steps
-
-This implementation provides a solid foundation for:
-
-- Adding more specialized child agents
-- Integrating additional APIs and data sources
-- Implementing advanced ML features
-- Scaling to production with proper deployment
-- Building web/mobile interfaces on top
-
 ---
 
-**Built with proper Google ADK patterns and multi-agent orchestration** 🤖✨
